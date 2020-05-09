@@ -2,6 +2,9 @@ package com.wenhao.springbeanlifecycle.initialization.domain;
 
 import lombok.extern.slf4j.Slf4j;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 
 @Slf4j
 public class Code001 {
@@ -11,10 +14,12 @@ public class Code001 {
     }
 
 
+    @PostConstruct
     private void initMethod() {
         log.info("初始化对象");
     }
 
+    @PreDestroy
     private void destroyMethod() {
         log.info("销毁对象");
     }
