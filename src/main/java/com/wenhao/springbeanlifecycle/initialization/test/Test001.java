@@ -17,7 +17,9 @@ public class Test001 {
             log.info(beanDefinitionName);
         }
         //Code001 code001 = (Code001) applicationContext.getBean("com.wenhao.springbeanlifecycle.initialization.Code001");
-        Code001 code001 = (Code001) applicationContext.getBean("com.wenhao.springbeanlifecycle.initialization.domain.Code001");
+        //Code001 code001 = (Code001) applicationContext.getBean("com.wenhao.springbeanlifecycle.initialization.domain.Code001");
+        //System.out.println(code001);
+        Code001 code001 = (Code001) applicationContext.getBean("code001");
         System.out.println(code001);
         //code001.destroy();
         //applicationContext.
